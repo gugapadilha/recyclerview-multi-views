@@ -8,7 +8,12 @@ import com.example.recyclerviewmultiviews.databinding.ResCabecalhoBinding
 
 class MainRecyclerViewAdapter : RecyclerView.Adapter<MainRecyclerViewHolder>() {
 
-    private val list = mutableListOf<MainRecyclerViewItem>()
+    private var list = mutableListOf<MainRecyclerViewItem>()
+
+    fun setData(lista : MutableList<MainRecyclerViewItem>){
+        this.list = lista
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainRecyclerViewHolder  =
              when(viewType){
@@ -22,12 +27,12 @@ class MainRecyclerViewAdapter : RecyclerView.Adapter<MainRecyclerViewHolder>() {
         }
 
 
-    override fun onBindViewHolder(holder: MainRecyclerViewHolder, position: Int) {
-
+    override fun onBindViewHolder(holder: MainRecyclerViewHolder, position: Int) =
         when(holder){
             is MainRecyclerViewHolder.AtorViewHolder -> holder.bind(list[position] as MainRecyclerViewItem.Ator)
+            is MainRecyclerViewHolder.CabecalhoViewHolder -> holder.bind(list[position] as MainRecyclerViewItem.Cabecalho)
         }
-    }
+
 
     override fun getItemViewType(position: Int): Int = when (list[position]){
             is MainRecyclerViewItem.Ator -> TIPO_ATOR
