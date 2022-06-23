@@ -1,5 +1,6 @@
 package com.example.recyclerviewmultiviews
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,6 +11,7 @@ class MainRecyclerViewAdapter : RecyclerView.Adapter<MainRecyclerViewHolder>() {
 
     private var list = mutableListOf<MainRecyclerViewItem>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(lista : MutableList<MainRecyclerViewItem>){
         this.list = lista
         notifyDataSetChanged()
@@ -40,9 +42,8 @@ class MainRecyclerViewAdapter : RecyclerView.Adapter<MainRecyclerViewHolder>() {
         }
 
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount() = list.size
+
 
     companion object {
         const val TIPO_ATOR = 0
