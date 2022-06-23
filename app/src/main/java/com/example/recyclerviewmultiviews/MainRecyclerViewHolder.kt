@@ -1,4 +1,7 @@
 package com.example.recyclerviewmultiviews
 
-class MainRecyclerViewHolder {
+import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerviewmultiviews.databinding.ActivityMainBinding
+
+class MainRecyclerViewHolder(binding: ActivityMainBinding) : RecyclerView.ViewHolder(binding.root) {
 }
