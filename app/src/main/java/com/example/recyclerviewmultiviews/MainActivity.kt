@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         _mainRecyclerViewAdapter.setData(getDate())
     }
 
-    //o certo é ter um viewModel que faz essa busca em um banco de dados
-    //em um codigo real ele nao fica assim
+    //the right thing to have is a viewmodel who made the search into the data base
+    //in a real code, it dont look like this
     private fun getDate(): MutableList<MainRecyclerViewItem> {
         val lista = mutableListOf<MainRecyclerViewItem>()
 
@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
         lista.add(MainRecyclerViewItem.Ator("Saber 5", "Rei Arthur", R.drawable.saber))
         lista.add(MainRecyclerViewItem.Ator("Saber 6", "Rei Arthur", R.drawable.saber))
         lista.add(MainRecyclerViewItem.Cabecalho(R.drawable.header))
+        lista.add(MainRecyclerViewItem.Ator("Saber 7", "Rei Arthur", R.drawable.saber))
+        lista.add(MainRecyclerViewItem.Ator("Saber 8", "Rei Arthur", R.drawable.saber))
+        lista.add(MainRecyclerViewItem.Ator("Saber 9", "Rei Arthur", R.drawable.saber))
 
         return lista
     }
