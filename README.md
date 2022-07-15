@@ -2,7 +2,7 @@
   
   > Status: Finalizado ✔️
   
-  ### Estruturando um simples projeto utilizando princípios básicos de recycler view com múltiplas views na mesma tela .
+  ### Estruturando um simples projeto utilizando princípios básicos de recycler view com múltiplas views na mesma tela (utilizando adapter).
   
   <br>
   
