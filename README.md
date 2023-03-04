@@ -1,12 +1,12 @@
-<h1> Projeto: Utilizando RecyclerView com Múltiplas Views <h1> 
+<h1> Projeto RecyclerView com Múltiple Views <h1> 
   
-  > Status: Finalizado ✔️
+  > Status: Finished ✔️
   
-  ### Estruturando um simples projeto utilizando princípios básicos de recycler view com múltiplas views na mesma tela (utilizando adapter).
+  ### Structuring a simple project using basic principles of recycler view with multiple views on the same screen (using adapter).
   
   <br>
   
-  <strong>Tecnologias usadas: </strong>
+  <strong>Technologies Used: </strong>
    + Kotlin
    + Android 
 
